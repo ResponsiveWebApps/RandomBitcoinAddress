@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8">
+    <title>Bitcore</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    </head>
+  <body>
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <h3 class="panel-title">Random Bitcoin Address Generator on Live Network</h3>
+      </div>
+      <div class="panel-body">
+        Live Private Key: <span id="livePrivateKey"></span><br />
+        Live Public Key: <span id="livePublicKey"></span><br />
+        Live Address: <span id="liveAddressKey"></span><br />
+        Valid? <span id="liveValidKey"></span><br />
+      </div>
+    </div>
+
+    <div class="panel panel-warning">
+      <div class="panel-heading">
+        <h3 class="panel-title">Random Bitcoin Address Generator on Test Network</h3>
+      </div>
+      <div class="panel-body">
+        Test Private Key: <span id="testPrivateKey"></span><br />
+        Test Public Key: <span id="testPublicKey"></span><br />
+        Live Address: <span id="testAddressKey"></span><br />
+        Valid? <span id="testValidKey"></span><br />
+      </div>
+    </div>
+
+    <br />
+
+    <!--script needs to be below dom elements-->
+    <script src="bower_components/bitcore/bitcore.min.js"></script>
+    <script src="index.js"></script>
+
+  </body>
+</html>
